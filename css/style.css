@@ -737,7 +737,7 @@ select {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background-color: #6C63FF;
+  background:linear-gradient(to right, rgb(3, 1, 51), rgb(43, 37, 146));
   transition: 0.7s; }
   .navbar--nofixed {
     position: relative;
@@ -878,10 +878,10 @@ select {
   background-color: #6C63FF; }
 
 .hero__overlay--gradient {
-  background: linear-gradient(to right, #6C63FF, #4641FF); }
+  background: linear-gradient(to right, rgb(3, 1, 51), rgb(43, 37, 146)); }
 
 .hero__overlay--gradientVertical {
-  background: linear-gradient(to bottom, #6C63FF, #4641FF); }
+  background: linear-gradient(to right, rgb(3, 1, 51), rgb(43, 37, 146)); }
 
 .hero__mask {
   position: absolute;
@@ -1057,13 +1057,13 @@ select {
   max-width: 60ch; }
 
 .cta {
-  background: linear-gradient(to right, #6C63FF, #4641FF);
+  background: linear-gradient(to right, rgb(43, 37, 146), rgb(3, 1, 51));
   color: #fff;
   padding: 48pt 0;
   text-align: center; }
 
 .cta--reverse {
-  background: linear-gradient(to left, #6C63FF, #4641FF); }
+  background: linear-gradient(to left,  rgb(43, 37, 146), rgb(3, 1, 51)); }
 
 .cta--plain {
   background: #6C63FF; }
@@ -1082,8 +1082,9 @@ select {
     text-align: center; }
 
 .footer {
-  background-color: #ffffff;
-  padding: 36pt 0; }
+  /* background-color: #ffffff; */
+  padding: 36pt 0; 
+}
 
 .footer__inner {
   -js-display: flex;
@@ -1146,9 +1147,39 @@ select {
 .footer__row {
   margin-bottom: 8pt; }
 
+  /* Social Media */
+#social{
+  display: flex;
+  flex-direction: column;
+}
+
+.fa{
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  flex-direction: column;
+ 
+}
+
+.fa-facebook:hover{
+  color:#29487d
+}
+.fa-instagram:hover{
+  border-radius: 5px;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+.fa-linkedin:hover{
+  color: #0077B5;
+}
+
+.fa-twitter:hover{
+  color:#1DA1F2;
+}
+
+
 /*--- Modifiers---*/
 .footer--dark {
-  background-color: #333C44; }
+  background:  linear-gradient(to right, rgb(3, 1, 51), rgb(43, 37, 146)); }
   .footer--dark .footer__textLogo {
     color: #fff; }
   .footer--dark .footer__inner {
@@ -1160,6 +1191,7 @@ select {
       .footer--dark .footer__link:hover {
         color: #fff;
         border-color: #fff; } }
+
 
 .auth {
   padding-top: 102.66667px; }
